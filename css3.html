@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        .radius
+        {
+        
+         background: red;
+         height: 40px;
+         width: 40px;
+        /*
+         border-radius: 10px 20px;       
+         position: relative;   
+       */
+        /*  
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        */
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 10px;
+
+            margin-right: 6px;
+            box-shadow:inset 4px 4px red, 4px 4px red, 4px 4px blueviolet
+
+        
+        }
+        
+
+
+        .line
+        {
+            width: 1px;
+            height: 100px;
+            background: white;
+                    }
+        .flex
+        {
+            display: flex;            
+        }
+        .flex:hover .radius
+        {
+            box-shadow: 4px 4px red;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div clas="flex">
+    <div class="radius"></div>    
+    <div class ="radius">
+</body>
+</html>
